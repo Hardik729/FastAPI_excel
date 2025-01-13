@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from excel_routes import excel_router
 
 # Initialize FastAPI app
-app = FastAPI()
+app = FastAPI(title="Evaluators")
 app.include_router(excel_router)
 
 # Run the application using uvicorn
